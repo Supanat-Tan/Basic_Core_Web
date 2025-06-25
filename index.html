@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Peak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/pages/index.css">
+    <link rel="stylesheet" href="/styles/pages/about.css">
+    <link rel="stylesheet" href="/styles/pages/services.css">
+    <link rel="stylesheet" href="/styles/pages/contact.css">
+
+</head>
+
+<body>
+    <div id="preloader">Loading...</div>
+
+    <div id="overlay" class="overlay"></div>
+    <ul id="side-nav" class="side-nav">
+        <li class="nav-button" data-page="1">Home</li>
+        <li class="nav-button" data-page="2">About</li>
+        <li class="nav-button" data-page="3">Services</li>
+        <li class="nav-button" data-page="4">Contact</li>
+    </ul>
+
+
+    <nav class="main-nav">
+
+        <div id="tool-button" class="tool-button" onclick="handleSideNav()">
+            <img src="/imgs/moreIcon.png" alt="">
+        </div>
+
+        <div class="logo">Absolute Gym</div>
+
+        <ul>
+            <li class="nav-button" data-page="1">Home</li>
+            <li class="nav-button" data-page="2">About</li>
+            <li class="nav-button" data-page="3">Services</li>
+            <li class="nav-button" data-page="4">Contact</li>
+        </ul>
+            
+        <button id="join-button" onclick="changePages(4)">Join Now</button>
+    </nav>
+
+    <div id="home-page" class="index-page">
+
+        <div>
+            <h1>Welcome to Absolute Gym</h1>
+            <p>Transform your body. Strengthen your mind. Build the best version of yourself — starting today.</p>
+        </div>
+
+        <img src="/imgs/1.jpg" alt="">
+    </div>
+
+    <div id="about-page" class="about-page">
+
+        <div>
+            <h2>About Absolute Gym</h2>
+            <p>
+                At Absolute Fitness, we believe that fitness isn’t 
+                just about looking good — it’s about feeling powerful, 
+                confident, and in control of your life. 
+                We're here to help you unlock that strength, one rep, one session, 
+                one breakthrough at a time.
+            </p>
+
+            <p>
+                Founded by passionate trainers and wellness enthusiasts
+                , Elevate is built on a mission to make real
+                , sustainable progress accessible to everyone
+                 — no matter your starting point.
+            </p>
+
+            <p>
+                From high-intensity workouts to functional strength training
+                 and personalized coaching, we focus on building habits that last.
+                  Our approach is simple: train with purpose, stay consistent,
+                   and celebrate every victory — big or small.
+            </p>
+        </div>
+
+        <img src="/imgs/2.jpg" alt="">
+    </div>
+
+    <div id="services-page" class="services-page">
+
+        <div>
+
+            <div>
+                <h2>🏋️‍♂️ Our Services</h2>
+                <p>
+                    Unlock your full potential with our personalized fitness solutions.
+                     Whether you're just starting out or looking to take your training
+                      to the next level, we’ve got you covered.
+                </p>
+            </div>
+
+            <div>
+                <div>
+                    <h2>💪 Personal Training</h2>
+                    <p>
+                        Get 1-on-1 coaching tailored to your goals, fitness level, and lifestyle. From strength training to fat loss — we create a plan that works for you.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>🥗 Nutrition Coaching</h2>
+                    <p>
+                        Fuel your progress with expert dietary advice. Learn how to eat smarter, not less, with flexible plans that complement your workouts.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>🧘 Mobility & Recovery</h2>
+                    <p>
+                        Prevent injury and stay consistent with guided stretching, mobility drills, and recovery sessions that help your body stay strong and pain-free.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>🏠 Online Programs</h2>
+                    <p>
+                        Train from anywhere with our virtual coaching and home-friendly workouts. Perfect for busy schedules and remote clients.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <img src="/imgs/3.jpg" alt="">
+    </div>
+
+    <div id="contact-page" class="contact-page">
+
+        <div>
+
+            <form action="submit" method="POST" id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" rows="6" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="/scripts/main.js"></script>
+
+</html>
